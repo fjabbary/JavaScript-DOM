@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./static/css/style.css">
+  <title>JavaScript DOM</title>
+</head>
+
+<body class="p-5">
+
+  <div class="container my-5">
+    <h1 class="mb-5 bg-info p-3">Products (<span id="count"></span>)</h1>
+    <div class="row"></div>
+    <hr>
+
+    <div class="mx-auto w-50 my-5">
+      <form onsubmit="handleSubmit(event)">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
+          <div class="error d-none"><small>User name has to be at least 3 characters long</small></div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+          <div class="error d-none"><small>Email has to be in correct format</small></div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+          <div class="error d-none"><small>Message has to be at least 10 characters long</small></div>
+        </div>
+        <div id="success-msg" class="alert alert-success d-none my-4">Date posted successfully</div>
+
+        <button type="submit" class="btn btn-warning">Submit</button>
+      </form>
+     
+    </div>
+  </div>
+
+  <hr>
+  <div id="text" class="my-3"><strong>Click me to change color</strong></div>
+  <div id="task" class="my-3"><strong>This is task to do</strong></div>
+  <div id="box" class="my-3"></div>
+  <input type="text" id="input" class="my-3">
+  <button id="btn" class="my-3" type="button">Click to move the box</button>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script src="./static/js/script.js"></script>
+</body>
+
+</html>

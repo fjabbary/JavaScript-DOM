@@ -1,0 +1,17 @@
+.inputError {
+  border: 1px solid rgb(196, 0, 0);
+}
+
+.error {
+  color: rgb(196, 0, 0);
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: #400606;
+}
+
+#input {
+  width: 150px;
+}
